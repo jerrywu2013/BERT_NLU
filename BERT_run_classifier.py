@@ -54,10 +54,10 @@ class C(DataProcessor):
 
 #Run
 
-export BERT_Chinese_DIR=/path/to/bert/chinese_L-12_H-768_A-12
-export Demo_DIR=/path/to/DemoDate
+export BERT_Chinese_DIR=chinese_L-12_H-768_A-12
+export Demo_DIR=input
 
-python run_classifier.py \
+python3 run_classifier.py \
   --task_name=demo \
   --do_train=true \
   --do_eval=true \
@@ -69,4 +69,4 @@ python run_classifier.py \
   --train_batch_size=32 \
   --learning_rate=2e-5 \
   --num_train_epochs=3.0 \
-  --output_dir=/tmp/Demo_output/
+  --output_dir=Demo_output
